@@ -1,0 +1,31 @@
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom VB.vbprojResolveAssemblyReference.cache
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom_VB.Resources.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom_VB.rrhh.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom VB.vbproj.GenerateResource.Cache
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom VB.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\bin\Debug\Servycom VB.exe
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\bin\Debug\Servycom VB.pdb
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\bin\Debug\Servycom VB.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\bin\Debug\MySql.Data.dll
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\bin\Debug\MySql.Data.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom VB.exe
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom VB.pdb
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom_VB.NuevoLegajo.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom_VB.ModificarLegajo.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom\App Escritorio\Servycom VB\Servycom VB\obj\Debug\Servycom_VB.login.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom VB.exe
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom VB.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom VB.pdb
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\Servycom VB.exe.config
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\Servycom VB.exe
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\Servycom VB.pdb
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\Servycom VB.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\MySql.Data.dll
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\bin\Debug\MySql.Data.xml
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom VB.vbprojResolveAssemblyReference.cache
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom_VB.login.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom_VB.ModificarLegajo.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom_VB.Resources.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom_VB.NuevoLegajo.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom_VB.rrhh.resources
+C:\Users\DANIEL BUSNARDO\Desktop\Servycom VB acc\Servycom VB\obj\Debug\Servycom VB.vbproj.GenerateResource.Cache

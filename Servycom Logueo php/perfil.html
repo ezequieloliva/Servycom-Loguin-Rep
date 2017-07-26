@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Perfil de Usuario</title>
+ <link rel="stylesheet" href="css/styleMenu.css">
+ <link rel="stylesheet" href="css/styleSwitchButton.css">
+ <link rel="stylesheet" href="css/stylePuntaje.css">
+  <link rel="stylesheet" href="css/styleList.css">
+<link rel="stylesheet" href="css/styleListAdd.css">
+<link rel="stylesheet" href="css/styleDown.css">
+
+<!-- ESTO HACE REPONSIVE:
+ <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<!--[if lte IE 8]><script src=js/ie/html5shiv.js></script><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href=ie9.css /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href=ie8.css /><![endif]-->
+	
+
+<style type="text/css">
+.auto-style1 {
+	width: 180px;
+	margin: 50px auto;
+	padding: 10px;
+	background: #c5d5e6;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.5);
+	text-align: right;
+}
+.auto-style2 {
+	text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Seccion con puntajes -->
+<section class="container">
+   
+    <a  class="share-btn" target="_blank">
+      <span class="share-btn-action share-btn-tweet">Puntos </span>
+      <span class="share-btn-count">210</span>
+    </a>
+    <a  class="share-btn" target="_blank">
+      <span class="share-btn-action share-btn-like">En Obra</span>
+
+      <span class="share-btn-count">15</span>
+    </a>
+    <a  class="share-btn" target="_blank">
+      <span class="share-btn-action share-btn-plus">Francos</span>
+      <span class="share-btn-count">1</span>
+    </a>
+
+</section>
+
+
+<!--Lista de menu  -->
+<nav class="auto-style1">
+   <!-- Select con opciones de trabajo en: -->
+	<select class="side-nav-button" name="lugarDeTrabajo">
+    <option>Oficina</option>
+    <option>Obra</option>
+    <option>Deposito</option>
+    <option>Inicio de Recreo</option>
+    <option>Fin de Recreo</option>
+    </select>
+    <!-- Switch de color verde -->
+    <label class="switch switch-green">
+      <input type="checkbox" class="switch-input" checked>
+      <span class="switch-label" data-on="On" data-off="Off"></span>
+      <span class="switch-handle"></span>
+    </label>
+
+</nav>
+<!-- Lista de tareas a realizar  -->
+  <section class="tasks">
+    <header class="tasks-header">
+      <h2 class="tasks-title">Listado de tareas</h2>
+     <!-- <a href="" class="tasks-lists">Lists</a>  ESTE ES UN MENU PARA ALGO -->
+      <ul class="todo-controls">
+        <li class="auto-style2"><a href="" class="icon-add">Add</a></li>
+        <li class="auto-style2"><a href="" class="icon-delete">Delete</a></li>
+      </ul>
+
+    </header>
+    <fieldset class="tasks-list">
+      <label class="tasks-list-item">
+        <input type="checkbox" name="task_1" value="1" class="tasks-list-cb" checked>
+        <span class="tasks-list-mark"></span>
+        <span class="tasks-list-desc">Migracion TX sin LP</span>
+      </label>
+      <label class="tasks-list-item">
+        <input type="checkbox" name="task_2" value="1" class="tasks-list-cb" checked>
+        <span class="tasks-list-mark"></span>
+        <span class="tasks-list-desc">Auditoria TX SF055-SE098</span>
+      </label>
+      <label class="tasks-list-item">
+        <input type="checkbox" name="task_3" value="1" class="tasks-list-cb">
+        <span class="tasks-list-mark"></span>
+        <span class="tasks-list-desc">Migracion a full ip</span>
+      </label>
+      <label class="tasks-list-item">
+        <input type="checkbox" name="task_3" value="1" class="tasks-list-cb">
+        <span class="tasks-list-mark"></span>
+        <span class="tasks-list-desc">Instalacion de RE</span>
+      </label>
+
+    </fieldset>
+  </section>
+<!-- Otro tipo de lista -->
+<div class="container"> 
+  <section class="todo">
+      <ul class="todo-controls">
+        <li><a href="" class="icon-add">Add</a></li>
+        <li><a href="" class="icon-delete">Delete</a></li>
+        <li class="right"><a href="" class="icon-settings">Settings</a></li>
+      </ul>
+
+      <ul class="todo-list">
+        <li class="done"><a href="" class="toggle">Toggle</a> Migracion TX</li>
+        <li><a href="" class="toggle">Toggle</a>Auditoria Estructura CO118</li>
+        <li><a href="" class="toggle">Toggle</a>Auditoria TX<br>with a line break!</li>
+      </ul>
+
+      <ul class="todo-pagination">
+        <li class="previous"><span><i class="icon-previous"></i> Previous</span></li>
+        <li class="next"><a href="index.html">Next <i class="icon-next"></i></a></li>
+      </ul>
+    </section>
+</div>
+
+<!--Documentos para descargar -->
+
+<!--Buscar el nombre del sprint en style para cambiarlo -->
+
+ <section class="widget">
+    <div class="widget-heading">
+      <h3 class="widget-title">File Downloads</h3>
+      <a href="index.html" class="widget-close"><span class="icon-close">Close</span></a>
+    </div>
+
+    <ul class="widget-toolbar">
+      <li><a href="index.html">Open downloads folder</a></li>
+      <li><a href="index.html">Clear all</a></li>
+    </ul>
+
+    <ul class="downloads">
+      <li class="download download-active">
+        <span class="icon-psd-40 download-icon"></span>
+        <h4 class="download-name">Home-Comp.psd</h4>
+        <p class="download-info">4.8 of 15MB - 162KB/sec - 1 min</p>
+        <div class="download-progress">
+          <div class="download-progress-bar" style="width: 32%"></div>
+        </div>
+      </li>
+      <li class="download">
+        <span class="icon-ai-24 download-icon"></span>
+        <h4 class="download-name">Revised-Logo.png</h4>
+      </li>
+      <li class="download">
+        <span class="icon-ai-24 download-icon"></span>
+        <h4 class="download-name">Original-Logo.png</h4>
+      </li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
