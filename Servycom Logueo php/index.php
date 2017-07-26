@@ -12,13 +12,22 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href=ie8.css /><![endif]-->
 	
 <title>Servycom/Login</title>
-
+<script type="text/javascript">
+function delayer(){
+document.write("<?php getRealIP();?>");
+}
+</script>
 </head>
 
-<body>
+<body onUnLoad="delayer();">
+<script type=”text/javascript”>
+
+document.oncontextmenu = function(){return false;}
+
+</script>
 <!-- Header -->
 					<header id="header">
-						<h1><a href=Login.php>Administrador</a></h1>
+						<h1><a href="index.php"></a></h1>
 						
 					</header>
 <!--Menu-->
@@ -36,10 +45,6 @@
 						<div class="inner">
 							<h2 class="major">Logueo</h2>
 								<form method="post" action= funciones.php>
-								
-								
-								
-								
 								<div class="field">
 									<label for="name">Nombre</label>						
 									<input type="text" name="name" id "name" value="" required>	
@@ -48,15 +53,17 @@
 								<div class="field">
 									<label for="clave">DNI</label>
 								
-								<select name="clave" id "clave" se="mostrarNombre(value)">
+								<select name="clave" id "clave" onchange="mostrarValor(this.value);">>
+						
 									<?php 
-									$cn=new mysqli("wo22","loguinse_eoliva","Clave123","loguinse_base_loguin");
+									
+									    $cn=new mysqli("wo22","loguinse_eoliva","Clave123","loguinse_base_loguin");
  		                                $registros= $cn->query("select * from usuario");
 		                                while ($filas=$registros->fetch_array())
-		                                  { echo "<option value='$filas[nombre]'>";
+		                                  { echo "<option value='$filas[dni]'>";
    		                                   echo "$filas[dni]";     
     		                               echo "</option>";     
-										   $nombre=$filas[dni];
+										   
 		                                  }
         
 		                                   $cn->close();
@@ -69,11 +76,13 @@
 									<label for="cellid"> Lugar de Trabajo </label>
 									<select name="cellid" id="cellid">
 									
+									<option value="Viajando">En viaje </option>
 									<option value="Obra">Obra</option>
 									<option value="Oficina">Oficina</option>
 									<option value="Deposito">Deposito</option>
-									<option value="Descanso">Descanso</option>
-									
+									<option value="Descanso">Inicio de Descanso</option>
+									<option value="Deposito">Fin de Descanso</option>
+
                                     </select>
 								</div>
 								<div class="field">
@@ -90,7 +99,7 @@
 								</div>
 								<div class="field">
 								<ul class="actions">
-									<li><button class="special" name="registrar" id="registrar" onclick="cargarmap()" disabled="disabled" >Registrar</button></li>
+									<li><input type="submit" onclick="cargarmap()" value="Registrar" class="special" style="" /></li>
 								</ul>
 								</div>
 								
@@ -110,6 +119,9 @@
 			<script src=js/main.js></script>
  <!-- Se determina y escribe la localizacion -->
 <div id='ubicacion'></div>
+<script type="text/javascript">
+
+</script>
 
 <!-- Se escribe un mapa con la localizacion anterior-->
 
@@ -126,23 +138,18 @@
 </section>
 
 <script type="text/javascript">
-function mostrarNombre(valor)
-{
-	documen.get('name').value=valor;
-}
+<!-- Funcion para pasar el nombre a la caja de texto -->
+
+
+
+
 var x=document.getElementById("demo");
-function habilitarBotonRegistrar()
-{
-	document.form.registrar.disabled=false;
-	
-}
 <!--Cargar mapa en form -->
 function cargarmap(){
-	
-	navigator.geolocation.getCurrentPosition(showPosition,showError);
-	
+navigator.geolocation.getCurrentPosition(showPosition,showError);
+
 <!-- mostrar posicion-->
-	function showPosition(position)
+function showPosition(position)
   {
   lat=position.coords.latitude;
   lon=position.coords.longitude;
@@ -173,11 +180,8 @@ if(mm<10) {
   };
   var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
   var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
-  } <!-- Fin de function showPosition-->
-  
-  document.getElementById('registrar').disabled=false; <!-- Habilitar boton registrar-->
-	
-	function showError(error)
+  }
+function showError(error)
   {
   switch(error.code) 
     {
@@ -209,3 +213,17 @@ if(mm<10) {
 </body>
 
 </html>
+<?php
+function getRealIP()
+{
+   $client_ip= $_SERVER["REMOTE_ADDR"];
+   $hoy = strftime( "%Y/%m/%d-%H:%M:%S", time() );
+   $cn= mysqli_connect("wo22","loguinse_eoliva","Clave123","loguinse_base_loguin");
+   $sql="insert into auditoria(ip,fecha_hora) values ('$client_ip','$hoy')";	 
+    	$reg1 =	mysqli_query ($cn,$sql);
+ 	
+ 		mysqli_close($cn);
+   //return $client_ip;
+ 
+}
+?>
